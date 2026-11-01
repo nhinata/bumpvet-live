@@ -1,0 +1,15 @@
+name: bumpvet
+on:
+  pull_request:
+    paths: [package-lock.json]
+permissions:
+  contents: read
+jobs:
+  bumpvet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - uses: nhinata/bumpvet@fa4c69598ff05a629403c3d7a7f0b607e584f369 # v0.4.0
