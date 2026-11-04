@@ -3,8 +3,7 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: monday
+      interval: daily
     open-pull-requests-limit: 10
     groups:
       dev-dependencies:
@@ -15,4 +14,7 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: daily
+    cooldown:
+      exclude:
+        - nhinata/bumpvet
