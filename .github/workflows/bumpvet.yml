@@ -15,6 +15,6 @@ jobs:
         with:
           fetch-depth: 2
           persist-credentials: false
-      - uses: nhinata/bumpvet@df189290ca70dfb7dce20486a6ecbc12c7417f93 # v0.7.1
+      - uses: nhinata/bumpvet@71888310c204fe70cfd860445361299da7290407 # v0.8.1
         with:
           comment: true
